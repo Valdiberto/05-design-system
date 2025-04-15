@@ -21,6 +21,10 @@ jobs:
       - name: Install dependencies (workspace-aware)
         run: npm install
 
+      - name: Build tokens
+        working-directory: ./packages/tokens
+        run: npm run build
+
       - name: Build docs storybook
         working-directory: ./packages/docs
         run: npm run build-storybook
