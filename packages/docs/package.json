@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build-vite": "tsc && vite build",
-    "deploy-storybook": "storybook-deployer --ci --branch=gh-pages",
+    "deploy-storybook": "storybook-deployer --ci --branch=gh-pages --existing-output-dir=storybook-static",
     "build": "storybook build",
     "lint": "eslint .",
     "preview": "vite preview",
