@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -17,12 +18,15 @@ jobs:
         with:
           node-version: 18
 
-      - run: npm install
+      - name: Install dependencies (workspace-aware)
+        run: npm install
 
-      - run: npm run build
+      - name: Build docs storybook
+        working-directory: ./packages/docs
+        run: npm run build-storybook
 
-      - name: Deploy storybook
+      - name: Deploy Storybook to GitHub Pages
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ github.actor}}:${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
