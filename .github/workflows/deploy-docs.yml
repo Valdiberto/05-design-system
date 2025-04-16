@@ -36,4 +36,4 @@ jobs:
         working-directory: ./packages/docs
         run: |
           npm run build-storybook
-          npx gh-pages -d storybook-static --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Valdiberto/05-design-system.git
+          npx gh-pages -d storybook-static/.nojekyll --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Valdiberto/05-design-system.git
