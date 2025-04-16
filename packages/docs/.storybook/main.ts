@@ -31,8 +31,11 @@ const config: StorybookConfig = {
     options: {},
   },
 
-  viteFinal: async (config) => {
-    config.base = '/05-design-system/' // Adicionando a configuração do caminho base
+  viteFinal: async (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/05-design-system/'
+    }
+
     config.resolve = {
       ...(config.resolve || {}),
       alias: {
