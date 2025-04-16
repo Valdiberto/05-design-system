@@ -11,5 +11,4 @@ export * from './components/ToolTip'
 export * from './components/Toast'
 
 export * from './styles'
-export { Avatar } from './components/Avatar'
-export type { AvatarProps } from './components/Avatar'
+
