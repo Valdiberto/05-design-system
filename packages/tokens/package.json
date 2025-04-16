@@ -1,17 +1,16 @@
 {
-  "name": "@ignite-ui/tokens",
-  "version": "1.0.0",
+  "name": "@vald6-ignite-ui/tokens",
+  "version": "3.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-  ".": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.js"
-    
-  }
-},
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
@@ -20,10 +19,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/ts-config": "*",
+    "@vald6-ignite-ui/eslint-config": "*",
+    "@vald6-ignite-ui/ts-config": "*",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }

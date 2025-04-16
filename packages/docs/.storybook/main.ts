@@ -40,14 +40,14 @@ const config: StorybookConfig = {
       ...(config.resolve || {}),
       alias: {
         ...(config.resolve?.alias || {}),
-        '@ignite-ui/react': join(__dirname, '../../react'),
-        '@ignite-ui/tokens': join(__dirname, '../../tokens'),
+        '@vald6-ignite-ui/react': join(__dirname, '../../react'),
+        '@vald6-ignite-ui/tokens': join(__dirname, '../../tokens'),
       },
     }
 
     config.optimizeDeps = {
       ...(config.optimizeDeps || {}),
-      include: ['@ignite-ui/react'],
+      include: ['@vald6-ignite-ui/react'],
     }
 
     return config

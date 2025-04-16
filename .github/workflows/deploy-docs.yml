@@ -24,8 +24,8 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          TURBO_TEAM: rocketseat
+          TURBO_TOKEN: P50BWRMoSFiOzt1n78z4dVBz
+          TURBO_TEAM: valdibertos-projects
 
       - name: Git config
         run: |

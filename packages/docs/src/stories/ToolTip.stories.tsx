@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Button, ToolTip, ToolTipProps } from '@ignite-ui/react'
+import { Box, Button, ToolTip, ToolTipProps } from '@vald6-ignite-ui/react'
 
 export default {
   title: 'Form/ToolTip',

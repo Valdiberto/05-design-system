@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/tokens",
+  "name": "@vald6-vald6-ignite-ui/tokens",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -22,8 +22,8 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/ts-config": "*",
+    "@vald6-vald6-ignite-ui/eslint-config": "*",
+    "@vald6-vald6-ignite-ui/ts-config": "*",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }

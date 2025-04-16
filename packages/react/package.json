@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/react",
-  "version": "1.0.0",
+  "name": "@vald6-ignite-ui/react",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,6 @@
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-     
     }
   },
   "scripts": {
@@ -22,9 +21,9 @@
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@vald6-ignite-ui/eslint-config": "*",
+    "@vald6-ignite-ui/tokens": "*",
+    "@vald6-ignite-ui/ts-config": "*",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "react": "^19.1.0",
@@ -32,7 +31,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@ignite-ui/tokens": "*",
+    "@vald6-ignite-ui/tokens": "*",
     "@radix-ui/react-avatar": "^1.1.4",
     "@radix-ui/react-checkbox": "^1.1.5",
     "@radix-ui/react-toast": "^1.2.7",

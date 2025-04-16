@@ -14,6 +14,6 @@ const compat = new FlatCompat({
 
 export default defineConfig([
   {
-    extends: compat.extends('@ignite-ui/eslint-config'),
+    extends: compat.extends('@vald6-ignite-ui/eslint-config'),
   },
 ])

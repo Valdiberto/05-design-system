@@ -5,10 +5,14 @@
   ],
   "scripts": {
     "dev": "turbo run dev storybook --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=@vald6-ignite-ui/docs && changeset publish"
   },
   "packageManager": "npm@10.2.4",
   "devDependencies": {
+    "@changesets/cli": "^2.29.1",
     "turbo": "^2.5.0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@vald6-ignite-ui/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,10 +16,10 @@
   },
   "homepage": "https://valdiberto.github.io/05-design-system",
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@vald6-ignite-ui/eslint-config": "*",
+    "@vald6-ignite-ui/react": "*",
+    "@vald6-ignite-ui/tokens": "*",
+    "@vald6-ignite-ui/ts-config": "*",
     "phosphor": "^0.7.1",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
