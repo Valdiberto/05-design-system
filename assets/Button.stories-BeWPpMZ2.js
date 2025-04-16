@@ -14,9 +14,9 @@ import{j as d}from"./index-BDhFyJyw.js";import{I as A,r as B,c as C}from"./index
   }
 }`,...(j=(x=s.parameters)==null?void 0:x.docs)==null?void 0:j.source}}};var W,b,S;i.parameters={...i.parameters,docs:{...(W=i.parameters)==null?void 0:W.docs,source:{originalSource:`{
   args: {
-    children: <>
-        Próximo passo
-        <ArrowRight weight="bold" />
+    children: <>\r
+        Próximo passo\r
+        <ArrowRight weight="bold" />\r
       </>
   }
 }`,...(S=(b=i.parameters)==null?void 0:b.docs)==null?void 0:S.source}}};var v,w,F;l.parameters={...l.parameters,docs:{...(v=l.parameters)==null?void 0:v.docs,source:{originalSource:`{
