@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -15,15 +16,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18 # Storybook precisa de Node 18+
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
 
-      - run: npm install
+      - run: npm ci
 
-      - name: Turbo build all packages
-        run: npm run build
-
-      - name: Deploy Storybook
-        working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+      - run: npm run build
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          TURBO_TEAM: rocketseat
+
+      - name: Git config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Deploy Storybook to GitHub Pages
+        working-directory: ./packages/docs
+        run: |
+          npm run build-storybook
+          npx gh-pages -d storybook-static --repo=https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Valdiberto/05-design-system.git
