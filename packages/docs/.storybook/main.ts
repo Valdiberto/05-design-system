@@ -30,5 +30,23 @@ const config: StorybookConfig = {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
+
+  viteFinal: async (config) => {
+    config.resolve = {
+      ...(config.resolve || {}),
+      alias: {
+        ...(config.resolve?.alias || {}),
+        '@ignite-ui/react': join(__dirname, '../../react'),
+        '@ignite-ui/tokens': join(__dirname, '../../tokens'),
+      },
+    }
+
+    config.optimizeDeps = {
+      ...(config.optimizeDeps || {}),
+      include: ['@ignite-ui/react'],
+    }
+
+    return config
+  },
 }
 export default config
